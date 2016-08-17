@@ -1,6 +1,6 @@
 FROM microsoft/dotnet 
  
-COPY NuGet.Config /app/
+COPY NuGet.config /app/
 COPY global.json /app/
  
 COPY src/Host/project.json /app/src/Host/
