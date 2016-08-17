@@ -7,10 +7,10 @@ COPY src/Host/project.json /app/src/Host/
 COPY src/IdentityServer4/project.json  /app/src/IdentityServer4/
  
 WORKDIR /app/src/IdentityServer4
-RUN ["dnx", "restore"]
+RUN ["dnu", "restore"]
 
 WORKDIR /app/src/Host
-RUN ["dnx", "restore"]
+RUN ["dnu", "restore"]
  
 COPY . /app
 WORKDIR /app/src/Host
